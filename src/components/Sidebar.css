@@ -1,5 +1,5 @@
 button {
-  background-color: none;
+  background-color: rgb(255, 255, 255);
   border: none;
   color: black;
   margin: 0;
@@ -27,4 +27,24 @@ button {
 }
 .app-sidebar-note {
   padding: 25px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.sidebar-note-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.app-sidebar-note p {
+  margin: 10px 0;
+}
+
+.app-sidebar-note small {
+  color: black;
+}
+.app-sidebar-note:hover {
+  background-color: rgb(234, 234, 234);
+}
+.app-sidebar-note.active {
+  background-color: rgb(234, 234, 234);
 }
